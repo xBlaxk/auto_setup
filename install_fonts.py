@@ -43,3 +43,12 @@ def uncompress_font_file(zip_path):
         return extracted_files
     except:
         print(f'Failed to uncompress: {zip_path}')
+
+def getAllFiles(path, extensions):
+    extracted_files = []
+
+    for extension in extensions:
+        print(f'Looking for /*.{extension}')
+        extracted_files.extend(glob.glob(f'{path}/*.{extension}'))
+
+    return extracted_files
