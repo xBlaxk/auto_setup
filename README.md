@@ -12,7 +12,7 @@ this is project started thinking about solving a task I made manually really oft
 
 Every time I format my computer or maybe just get a new laptop from my work I want to keep using the exact same dev enviroments in every single device, things like making sure I'm using "Z-Shell" as my main shell, have in it an installed theme, use the correct font, in the case of using windows install the WSL with the correct version of linux that I want to use, etc.
 
-So this is what I'm gonan do, make a scrip for every single OS that will setup the configuration
+So this is what I'm gonan do, make a script for every single OS that will setup my personal configuration.
 
 ## List of settings
 - Fonts
