@@ -14,6 +14,12 @@ import __constants
 
 
 def run():
+    for url in __constants.fontURL:
+        file_path = download_font(url)
+        extracted_files = uncompress_font_file(file_path)
+        install_font_file(extracted_files)
+
+
 def download_font(url):
     fileName = os.path.basename(url) 
 
