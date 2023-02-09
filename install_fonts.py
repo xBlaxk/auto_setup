@@ -58,3 +58,19 @@ def getAllFiles(path, extensions):
         extracted_files.extend(glob.glob(f'{path}/*.{extension}'))
 
     return extracted_files
+
+def install_font_file(fonts):
+    test_font = fonts[0]
+    install_command = f'copy "{test_font}" "C:\\Windows\\Fonts"'
+    subprocess.run(install_command, shell=True)
+    # for font in fonts:
+    #     font_name = os.path.basename(font)
+    #     install_command = f'copy {font} C:\\Windows\\Fonts'
+    #     try:
+    #         print(f'Installing font: {font_name}')
+    #         subprocess.run(install_command, shell=True)
+    #         print(f'Font installed: {font_name}')
+    #     except:
+    #         print(f'Failed to install the font: {font_name}')
+
+    print("install_tff_file")
